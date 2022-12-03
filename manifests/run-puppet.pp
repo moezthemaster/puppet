@@ -10,7 +10,12 @@ cron { 'run-puppet':
   minute  => '*',
 }
 
-file { '/tmp/cron_test.txt':
+file { '/tmp/cron_test1.txt':
+  ensure  => file,
+  content => "test cron is working good!",
+}
+
+file { '/tmp/cron_test2.txt':
   ensure  => file,
   content => "test cron is working good!",
 }
