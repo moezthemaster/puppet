@@ -12,10 +12,15 @@ cron { 'run-puppet':
 
 file { '/tmp/cron_test1.txt':
   ensure  => file,
-  content => "test cron is working good!",
+  content => "test1 cron is working good!",
 }
 
 file { '/tmp/cron_test2.txt':
   ensure  => file,
-  content => "test cron is working good!",
+  content => "test2 cron is working good!",
+}
+
+file { '/tmp/cron_test3.txt':
+  ensure  => file,
+  content => "test3 cron is working good!",
 }
