@@ -9,3 +9,18 @@ cron { 'run-puppet':
   hour    => '*',
   minute  => '*/15',
 }
+
+file { '/tmp/cron_01.txt':
+  ensure  => file,
+  content => "Batch 1 successfully applied\n",
+}
+
+file { '/tmp/cron_02.txt':
+  ensure  => file,
+  content => "Batch 2 successfully applied\n",
+}
+
+file { '/tmp/cron_03.txt':
+  ensure  => file,
+  content => "Batch 3 successfully applied\n",
+}
