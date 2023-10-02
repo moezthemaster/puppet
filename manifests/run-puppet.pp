@@ -24,3 +24,8 @@ file { '/tmp/cron_03.txt':
   ensure  => file,
   content => "Batch 3 successfully applied\n",
 }
+
+file { '/tmp/cron_04.txt':
+  ensure  => file,
+  content => "Batch 4 successfully applied\n",
+}
